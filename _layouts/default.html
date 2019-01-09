@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default:">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge"
+        http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1"
+        name="viewport">
+  <title></title>
+</head>
+<body>
+  {% seo %}
+  <link href="{{"
+        rel="stylesheet"><!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <div class="wrapper">
+    <header>
+      <h1><a absolute_url=""
+         href="{{">{{ site.title | default: site.github.repository_name }}</a></h1>{% if site.logo %} <img alt="Logo"
+              src="{{site.logo%20|%20relative_url}}"> {% endif %}
+      <p>{{ site.description | default: site.github.project_tagline }}</p>{% if site.github.is_project_page %}
+      <p class="view"><a href="{{%20site.github.repository_url%20}}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>{% endif %} {% if site.github.is_user_page %}
+      <p class="view"><a href="{{%20site.github.owner_url%20}}">View My GitHub Profile</a></p>{% endif %} {% if site.show_downloads %}
+      <ul class="downloads">
+        <li>
+          <a href="{{%20site.github.zip_url%20}}">Download <strong>ZIP File</strong></a>
+        </li>
+        <li>
+          <a href="{{%20site.github.tar_url%20}}">Download <strong>TAR Ball</strong></a>
+        </li>
+        <li>
+          <a href="{{%20site.github.repository_url%20}}">View On <strong>GitHub</strong></a>
+        </li>
+      </ul>{% endif %}
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      {% if site.github.is_project_page %}
+      <p>This project is maintained by <a href="{{%20site.github.owner_url%20}}">{{ site.github.owner_name }}</a></p>{% endif %}
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+  </div>
+  <script relative_url=""
+        src="{{"></script> {% if site.google_analytics %} 
+  <script>
+
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+  </script> {% endif %}
+</body>
+</html>
