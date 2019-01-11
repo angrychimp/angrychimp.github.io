@@ -1,3 +1,29 @@
-theme: jekyll-theme-minimal
+# Site settings
 title: angrychimp.net
 description: a modern digital primate
+email: randy@angrychimp.net
+url: https://angrychimp.net
+baseurl: ""
+
+title_image: "https://secure.gravatar.com/avatar/0034287e22d3004561196143dd563f14?s=500&d=mm"
+
+theme: jekyll-theme-cayman
+post_limit: 5
+
+# Social
+twitter_username: angrychimp
+github_username: angrychimp
+instagram_username: randk
+linked_link: https://www.linkedin.com/in/randallkahler/
+stackoverflow_link: https://stackoverflow.com/users/98030/angrychimp
+
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+exclude: [vendor]
