@@ -2,7 +2,7 @@
 layout: post
 title: Developing a new chapter
 thumbnail: power-off
-categories: [blog]
+category: blog
 tags: [github, blog, meta]
 ---
 
