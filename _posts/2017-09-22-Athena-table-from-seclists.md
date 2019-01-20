@@ -2,7 +2,7 @@
 layout: post
 title: Making an Athena table from the SecLists repo
 thumbnail: "user-shield"
-categories: [sre, aws]
+category: secops
 tags: [db, ops, secops]
 ---
 

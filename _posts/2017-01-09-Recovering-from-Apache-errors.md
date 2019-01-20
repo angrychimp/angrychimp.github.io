@@ -2,8 +2,8 @@
 layout: post
 title: Recovering from Apache "400 Bad Request" errors
 thumbnail: exclamation-circle
-categories: [sre, webdev]
-tags: [apache, troubleshooting, site-reliability]
+category: coding
+tags: [apache, database, web, troubleshooting, devops, site-reliability]
 ---
 
 You never want to encounter errors in your production environment. But what do you do if you release code that generates fatal errors outside your application?

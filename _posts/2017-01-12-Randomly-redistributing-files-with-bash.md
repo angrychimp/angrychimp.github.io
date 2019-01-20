@@ -2,8 +2,8 @@
 layout: post
 title: Randomly redistributing files with bash
 thumbnail: "laptop-code"
-categories: [ops]
-tags: [bash, ops]
+category: coding
+tags: [bash, ops, devops]
 ---
 
 This was was damn confusing, but the solution is absurdly obvious. I needed to relocate a large number of files from a single source into a collection of subfolders. (These subfolders were essentially worker queues, so I wanted a roughly even distribution every time new files appeared in the source folder.)
