@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Developing a new chapter
 thumbnail: power-off
-category: blog
+category: [blog]
 tags: [github, blog, meta]
 ---
 

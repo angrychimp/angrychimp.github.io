@@ -1,233 +1,312 @@
 
 # Site settings
-url: "https://angrychimp.net"
-baseurl: ""
+url                       : "https://angrychimp.net"
+baseurl                   : ""
+remote_theme              : "mmistakes/minimal-mistakes@4.15.1"
+minimal_mistakes_skin     : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Google tracking id
-google-tracking-id: "UA-30855930-1"
 
-# Forces https everywhere in your website, except when you serve it locally
-# If you are not hosted on Github Pages, and your host doesn't support https
-# then you should disable it
+# Site Settings
+locale                    : "en-US"
+name                      : "Randall Kahler"
+title                     : "{ angrychimp.net }"
+title_separator           : "-"
+description               : "Blog and website of Randall Kahler, blogging mainly for tech. Opinions expressed are mine."
+keywords                  : "kahler, randall, randy, personal, technology, blog, php, python, aws"
+favicon                   : "/assets/img/favicon.ico"
 
-force-https: False
+teaser                    : "https://www.gravatar.com/avatar/0034287e22d3004561196143dd563f14?s=100"
+logo                      : "https://www.gravatar.com/avatar/0034287e22d3004561196143dd563f14?s=100"
+avatar-img                : "https://www.gravatar.com/avatar/0034287e22d3004561196143dd563f14?s=500"
+profile-img               : "https://www.gravatar.com/avatar/6c47849a4b4fb250f480b6e109fbe478?s=400"
 
-#############
-# HTML Head #
-#############
+words_per_minute          : 200
+comments:
+  provider                : "disqus" #, "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname             : "angrychimp"
 
-lang: "en"
-author: "Randall Kahler"
-title: "{ angrychimp.net }"
-description: "Blog and website of Randall Kahler, blogging mainly for tech. Opinions expressed are mine."
-keywords: "kahler, randall, randy, personal, technology, blog, php, python, aws"
-favicon: "/img/favicon.ico"
+atom_feed:
+  path                    : # blank (default) uses feed.xml
+search                    : # true, false (default)
+search_full_content       : # true, false (default)
+search_provider           : # lunr (default), algolia, google
 
-################
-# Header layout #
-################
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
 
-black-favicon: "/img/favicon-white.ico"
-
-background-img: "../img/intro-bg.gif"
-
-##############################
-# Dynamic Text on the Header #
-##############################
-
-dynamic-typing: True
-decrypt-text: True
-shuffle: False # Shuffle the lines.
-loop: True
-loop-count: False # Set False for infinite loop, or set any number for finite loop.
-type-speed: 10
-start-delay: 200
-delete-delay: 12000
-lines: # You can add HTML Tags in the Text
-  # - text: "hack the planet"
-  - text: "the world is full of things more powerful than us"
-  - text: "if you know how to catch a ride, you can go places"
-  - text: "all information looks like noise until you break the code"
-  # - text: "never underestimate the determination of a kid who is time-rich and cash-poor"
-  # - text: "ideology is a virus"
-  # - text: "the best way to know someone is to have a conversation with them"
-
-# me-img: "/img/jetpacktocat.png"
-
-# To use facebook profile pic comment the previous line and uncomment the following
-# line, and replace 'user_id' with your facebook user id.
-# Facebook user id can be found by clicking on your profile pic and the large number
-# in the end of the url just before '&type' is your user id.
-# Note: fbid is not the same as user id and user id only contains numbers
-
-# me-img: "https://graph.facebook.com/user_id/picture?type=large&width=500&height=500"
-
-# To use github profile pic uncomment the following line and replace 'user_name'
-# with your github user name.
-
-# me-img: "https://github.com/angrychimp.png?size=500"
-
-# To use gravatar profile pic uncomment the following line and replace 'email_hash'
-# with your gravatar profile email hash.
-# You can create the email hash by using an online tool like 'http://www.md5hashgenerator.com/'
-# just enter your email and it will generate the hash.
-
-me-img: "https://www.gravatar.com/avatar/0034287e22d3004561196143dd563f14?s=500"
-
-##############################
-# Color the browser elements #
-##############################
-color-browser: "#000000"
-apple-status-bar-style: "black"
-
-################
-# Web app mode #
-################
-
-web-app-mode: True
-
-# Icons for Web App mode
-
-icon-36p: "/img/web-app/icon-36p.png"
-icon-48p: "/img/web-app/icon-48p.png"
-icon-72p: "/img/web-app/icon-72p.png"
-icon-96p: "/img/web-app/icon-96p.png"
-icon-144p: "/img/web-app/icon-144p.png"
-icon-192p: "/img/web-app/icon-192p.png"
-
-########
-# Blog #
-########
-
-enable-gesture-navigation: True
-
-post-preview-words: 96
-
-paginate: 5
-
-email-share: True
-fb-share: True
-twitter-share: True
-linkedin-share: True
-reddit-share: True
-google-plus-share: False
-tumblr-share: False
-pinterest-share: False
-pocket-share: True
-vkontakte-share: False
-
-disqus-shortname: "angrychimp"
-
-syntax-highlight: True
-
-############
-# Timeline #
-############
-
-events:
-  - image: "/img/timeline/cordial.jpg"
-    date: "Aug 2018 - Present"
-    description: |
-      Site Reliability Engineer  
-      *@ [Cordial](https://cordial.com)*
-  - image: "/img/timeline/mapp.jpg"
-    date: "Sept 2015 - Mar 2018"
-    description: |
-      DevOps Engineer  
-      *@ [Mapp Digital](https://mapp.com)*
-  - image: "/img/timeline/bluehornet.jpg"
-    date: "Aug 2004 - Sep 2015"
-    description: |
-      DevOps Engineer  
-      *@ BlueHornet Networks*
-
-# First image of the Timeline
-
-timeline-img: "https://en.gravatar.com/userimage/33946822/7156335c5c27ab3c8f10983eabea7dac.jpg?size=400"
-
-###########
-# Contact #
-###########
-
-email: "randy@angrychimp.net"
-
-################
-# Author Blurb #
-################
-
-# The author blurb goes underneath blog posts.
-# This works best when your author blurb image has a transparent background, or matches your site background color.
-
-# if the author_blurb is not set, then this feature is skipped
-author_blurb: "Randy Kahler is a site reliability engineer living in San Diego, CA. He spends his days chasing 6 nines on behalf of <a href=\"https://cordial.com\" _target=\"blank\">Coridal Experience</a> and his evenings competing with his French bulldog, Piglet, for attention from his lovely wife."
-author_blurb_image: "/img/author.png"
-
-##################
-# Social Buttons #
-##################
-
+# Social Sharing
+twitter:
+  username               : "angrychimp"
+facebook:
+  username               : 
+  app_id                 : 
+  publisher              : 
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  # - title: "facebook"
-  #   url: "https://facebook.com/"
-  - title: "twitter"
-    url: "https://twitter.com/angrychimp"
-  - title: "linkedin"
-    url: https://www.linkedin.com/in/randallkahler/
-  - title: "instagram"
-    url: randk
-  - title: "github"
-    url: "https://github.com/angrychimp"
-  - title: "stack-overflow"
-    url: "https://stackoverflow.com/users/98030/angrychimp"
-  # - title: "bitcoin"
-  #   url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: 
+    - https://www.linkedin.com/in/randallkahler/
+    - https://github.com/angrychimp
+    - https://stackoverflow.com/users/98030/angrychimp
+    - https://keybase.io/angrychimp
+    - https://www.instagram.com/randk/
 
-############
-# 404 page #
-############
+# Analytics
+analytics:
+  provider               : "google" #, "google-universal", "custom"
+  google:
+    tracking_id          : UA-30855930-1
+    anonymize_ip         : # true, false (default)
 
-err-404-img: "/img/labtocat.png"
+# Site Author
+author:
+  name             : "randy kahler"
+  avatar           : "https://www.gravatar.com/avatar/6c47849a4b4fb250f480b6e109fbe478?s=400"
+  bio              : "I am an amazing person."
+  location         : "San Diego, CA"
+  email            : "randy@angrychimp.net"
+  links:
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: mailto:randy@angrychimp.net
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://angrychimp.net"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/angrychimp"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/randk"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/angrychimp"
+    - label: "StackOverflow"
+      icon: "fab fa-fw fa-stack-overflow"
+      url: "https://stackoverflow.com/users/98030/angrychimp"
+    - label: "Keybase"
+      icon: "fab fa-fw fa-keybase"
+      url: "https:/keybase.io/angrychimp"
 
-##################
-# GPG on Keybase #
-##################
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
 
-keybase-username: angrychimp
-keybase-in-social: True
-keybase-in-footer: False
 
-################################################################################
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# NB! Tread carefully if you want to change the variables below this point!
 
-# Sections shown in the index page
-
-pages_list:
-  About: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
-  Contact: 'contact'
-
-# Exclusion list from the generated _site
-
-exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
-
-# Pagination path
-
-paginate_path: "blog/page:num/"
-
-# Enable minification SASS
-
-sass:
-  style: compressed
-
-# Build settings
+# Conversion
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
+
+# Markdown Processing
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-# gems:
-#   - jekyll-paginate
-#   - jemoji
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+  # _recipes
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _pets
+  - scope:
+      path: ""
+      type: pets
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
