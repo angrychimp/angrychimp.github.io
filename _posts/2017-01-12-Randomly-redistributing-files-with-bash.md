@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Randomly redistributing files with bash
 thumbnail: "laptop-code"
-category: coding
+category: [coding]
 tags: [bash, ops, devops]
 ---
 

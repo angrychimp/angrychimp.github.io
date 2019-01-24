@@ -1,8 +1,7 @@
 ---
-layout: post
 title: Recovering from Apache "400 Bad Request" errors
 thumbnail: exclamation-circle
-category: coding
+categories: [coding]
 tags: [apache, database, web, troubleshooting, devops, site-reliability]
 ---
 
