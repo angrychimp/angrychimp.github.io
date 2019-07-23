@@ -19,6 +19,7 @@ teaser                    : "https://www.gravatar.com/avatar/0034287e22d30045611
 logo                      : "https://www.gravatar.com/avatar/0034287e22d3004561196143dd563f14?s=100"
 avatar-img                : "https://www.gravatar.com/avatar/0034287e22d3004561196143dd563f14?s=500"
 profile-img               : "https://www.gravatar.com/avatar/6c47849a4b4fb250f480b6e109fbe478?s=400"
+excerpt_separator         : "<!--more-->"
 
 words_per_minute          : 200
 comments:
@@ -72,7 +73,7 @@ analytics:
 author:
   name             : "randy kahler"
   avatar           : "https://www.gravatar.com/avatar/6c47849a4b4fb250f480b6e109fbe478?s=400"
-  bio              : "I am an amazing person."
+  bio              : "devops, video games & burritos"
   location         : "San Diego, CA"
   email            : "randy@angrychimp.net"
   links:
